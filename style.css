@@ -1,0 +1,114 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('IMG_20260727_192443_251.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.container {
+    background: rgba(20, 20, 20, 0.9); 
+    border: 1px solid #00ff88; 
+    border-radius: 15px;
+    padding: 30px; 
+    width: 100%; 
+    max-width: 450px; 
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+h1 { 
+    text-align: center; 
+    color: #00ff88; 
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    letter-spacing: 2px; 
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color: #00ff88; 
+    font-weight: bold; 
+    font-size: 13px; 
+}
+
+input, select {
+    width: 100%; 
+    padding: 12px; 
+    background: rgba(255,255,255,0.1); 
+    border: 1px solid #00ff88;
+    border-radius: 8px; 
+    color: #fff; 
+    font-size: 15px;
+}
+
+input:focus, select:focus { 
+    outline: none; 
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5); 
+}
+
+select option { 
+    background: #1a1a1a; 
+}
+
+button {
+    width: 100%; 
+    padding: 15px; 
+    background: #00ff88; 
+    border: none; 
+    border-radius: 8px;
+    color: #000; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-top: 10px;
+}
+
+button:hover { 
+    background: #00cc6a; 
+}
+
+button:disabled { 
+    background: #555; 
+    color: #888; 
+    cursor: not-allowed; 
+}
+
+.status { 
+    margin-top: 15px; 
+    padding: 12px; 
+    border-radius: 8px; 
+    text-align: center; 
+    display: none; 
+    font-weight: bold; 
+}
+
+.success { 
+    background: rgba(0, 255, 136, 0.2); 
+    border: 1px solid #00ff88; 
+    color: #00ff88; 
+    display: block; 
+}
+
+.error { 
+    background: rgba(255, 0, 85, 0.2); 
+    border: 1px solid #ff0055; 
+    color: #ff0055; 
+    display: block; 
+}
