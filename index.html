@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMATISATION REPORT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ AUTOMATISATION REPORT ⚡</h1>
+        <form id="reportForm">
+            <div class="form-group">
+                <label>ENTER NUMBER</label>
+                <input type="text" id="target_number" placeholder="+509 XXXX XXXX" required>
+            </div>
+            <div class="form-group">
+                <label>NOMBRE DE REPORT</label>
+                <input type="number" id="nombre_report" min="1" max="10" value="1" required>
+            </div>
+            <div class="form-group">
+                <label>DELAY BETWEEN EACH (ms)</label>
+                <input type="number" id="delay" value="3000" required>
+            </div>
+            <div class="form-group">
+                <label>SELECTIONNER MOTIF</label>
+                <select id="motif" required>
+                    <option value="" disabled selected>-- Select a reason --</option>
+                    <option value="SPAMMING">🚫 SPAMMING</option>
+                    <option value="TOOL">🤖 TOOL</option>
+                    <option value="HAKING">💀 HAKING</option>
+                    <option value="BANNED">⛔ BANNED</option>
+                    <option value="VIOLATION">⚠️ VIOLATION</option>
+                    <option value="ARNAQUE">💸 ARNAQUE</option>
+                    <option value="FRAUDE">🏦 FRAUDE</option>
+                    <option value="SCAM">🎪 SCAM</option>
+                    <option value="GANGSTER">🔫 GANGSTER</option>
+                    <option value="HOAX">📢 HOAX</option>
+                    <option value="DRUGS">💊 DRUGS</option>
+                    <option value="MODIFIED APP">📱 MODIFIED APP</option>
+                </select>
+            </div>
+            <button type="submit" id="submitBtn">🚀 Launch Attack</button>
+        </form>
+        <div id="statusMessage" class="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
